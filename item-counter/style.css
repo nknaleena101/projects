@@ -1,23 +1,86 @@
+
+@media only screen and (min-width: 768px){
+  
+  .container{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .block{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    border-radius: 20px;
+    height: 80px;
+    width: 100%;
+  }
+  
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  button{
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 768px){
+  body{
+    width: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block{
+    height: 70px;
+    width: 200px;
+    justify-content: center;
+  }
+
+  p{
+    font-size: 26px;
+    margin: 0 25px;
+  }
+  
+  button{
+    font-size: 40px;
+  }
+}
+
 body{
-  background-color: rgb(20, 12, 43);
   margin: 0;
   padding: 0;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 12, 43);
   color: black;
 }
 
 .container{
-  width: 100%;
-  height: 896px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .block{
-  display: grid;
-  grid-template-columns: 80px 80px 80px;
-  column-gap: 10px;
-  justify-content: center;
+  display: flex;
   align-items: center;
   background-color: white;
   border-radius: 20px;
@@ -25,16 +88,12 @@ body{
 
 p{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
   text-align: center;
   font-weight: bold;
 }
 
 button{
   border: none;
-  width: 100%;
-  height: 100px;
-  font-size: 60px;
   cursor: pointer;
   background-color: transparent;
 }
