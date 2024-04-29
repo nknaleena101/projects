@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* desktop view */
+@media only screen and (min-width: 768px){
+  
+  .wrapper .time{
+    height: 100px;
+    padding: 0 10px;
+  }
+  
+  .wrapper .time span{
+    width: 100px;
+    font-size: 50px;  
+  }
+  
+  .time span.colon{
+    width: 10px;
+  }
+
+  .wrapper .buttons{
+    margin-top: 20px;
+  }
+
+}
+
+/* mobile view */
+@media only screen and (max-width: 768px){
+
+  .wrapper .time{
+    height: 65px;
+    padding: none;
+  }
+  
+  .wrapper .time span{
+    width: 60px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  
+  .time span.colon{
+    width: 5px;
+  }
+
+  .wrapper .buttons{
+    margin-top: 60px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    padding: 14px 0;
+  }
+  
+  button{
+    width: 100%;
+    margin-top: 100px;
+  }
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7D2Ae8;
+}
+
+.wrapper{
+  user-select: none;
+}
+
+.wrapper .time{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+.wrapper .time span{
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+}
+
+.time span.ms-colon,
+.time span.millisecond{
+    color: #7D2Ae8;
+}
+
+.wrapper .buttons{
+  text-align: center;
+}
+
+.buttons button{
+  padding: 6px;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  color: #7D2Ae8;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+}
+
+.buttons button.active,
+.buttons button.stopActive{
+    cursor: not-allowed;
+    opacity: 0.8;
+}
