@@ -77,7 +77,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #26083f;
+  background: #044b33;
 }
 
 .wrapper{
@@ -101,7 +101,7 @@ body{
 
 .time span.ms-colon,
 .time span.millisecond{
-    color: #7D2Ae8;
+    color: #107553;
 }
 
 .wrapper .buttons{
@@ -113,7 +113,7 @@ body{
   outline: none;
   border: none;
   margin: 0 5px;
-  color: #7D2Ae8;
+  color: #107553;
   background: #fff;
   font-size: 16px;
   font-weight: 500;
