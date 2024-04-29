@@ -21,6 +21,10 @@
     margin-top: 20px;
   }
 
+  button{
+    width: 100px;
+  }
+
 }
 
 /* mobile view */
@@ -73,7 +77,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #7D2Ae8;
+  background: #26083f;
 }
 
 .wrapper{
@@ -121,5 +125,6 @@ body{
 .buttons button.active,
 .buttons button.stopActive{
     cursor: not-allowed;
+    background-color: #d8d8d8;
     opacity: 0.8;
 }
