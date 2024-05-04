@@ -1,10 +1,7 @@
-const dBtn = document.querySelector(".darkModeBtn");
-const hHT = document.querySelector(".hero-head-text");
-const hPT = document.querySelector(".hero-p-text");
-const hero = document.querySelector(".hero");
+const  content = document.getElementsByTagName("body")[0];
+const darkMode = document.getElementById("dark-change");
 
-function darkMode(){
-  hero.style.backgroundColor = "black";
-  hHT.style.color = "white";
-  hPT.style.color = "white";
-};
+darkMode.addEventListener("click", function(){
+  darkMode.classList.toggle("active");
+  content.classList.toggle("night");
+})
