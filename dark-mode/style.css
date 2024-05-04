@@ -1,48 +1,63 @@
-*{
-  padding: 0;
+body{
   margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.nav{
-  height: 50px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  background-color: rgb(255, 255, 255);
+main{
+  margin: 5vh 15%;
 }
 
-.darkModeBtn{
-  width: 40px;  
-  height: 40px;
+h1{
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p{
+  text-align: justify;
+  font-size: 18px;
+}
+
+label{
+  position: absolute;
+  width: 45px;
+  height: 22px;
+  right: 20px;
+  top: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+
+label:before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  background-color: black;
   cursor: pointer;
-  border: none;
-  border-radius: 40px;
-  background-color: rgb(0, 0, 0);
+  transition: 0.4s;
 }
 
-i{
-  font-size: 30px;
+label.active:before{
+  left:25px;
+  background-color: white;
+}
+
+body.night{
+  background: #000;
   color: white;
 }
 
-.hero{
-  height: 93.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero-head-text{
-  font-size: 150px;
-}
-
-.para{
-  width: 500px;
-}
-
-.hero-p-text{
-  font-size: 20px;
-  text-align: center;
+@media screen and (min-width:900px) {
+  .respon{
+    display: flex;
+  }
+  p{
+    max-width: 80%;
+    line-height: 30px;
+  }
 }
