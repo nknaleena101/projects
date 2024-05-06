@@ -3,9 +3,6 @@
 
 /* desktop  view*/
 @media only screen and (min-width: 768px) {
-  body{
-    width: 100vw;
-  }
   h1{
     font-size: 50px;
     margin-top: 50px;
@@ -43,9 +40,6 @@
 
 /* mobile view */
 @media only screen and (max-width: 768px){
-  body{
-    /* width: ; */
-  }
   h1{
     font-size: 20px;
     margin-top: 50px;
@@ -91,6 +85,7 @@
 
 body{
   background-color: #070F2B;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
