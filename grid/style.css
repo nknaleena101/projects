@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background: url(img/milad-fakurian-Oi_oaJk3qlo-unsplash.jpg);
+  background-size: cover;
+}
+
+.container{
+  width: 1200px;
+  height: 800px;
+  border-radius: 1em;
+  padding: 2em;
+  display: flex;
+  gap: 1em;
+}
+.row{
+  border-radius: 1em;
+}
+.row-1{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.row-2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.row-3{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.col{
+  flex: 1;
+  display: flex;
+  border-radius: 1em;
+  gap: 1em;
+}
+.col-2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.col-box ,.box{
+  flex: 1;
+  border-radius: 1em;
+  background: rgba(255, 255, 355, 0.15);
+  border: 2px solid #ffffff10;
+  backdrop-filter: blur(50px);
+  transition: 0.3s ease-in-out;
+}
+.col-box:hover ,.box:hover{
+  transform: scale(1.02);
+  border: 2px solid #ffffff50;
+}
+
+@media(max-width:1024px){
+  .container{
+    flex-direction: column;
+  }
+  .row-1, .row-2, .row-3{
+    flex-direction: row;
+  }
+  .col{
+    flex: 2;
+    flex-direction: column;
+  }
+  .col-2{
+    flex: 1;
+  }
+}
+
+@media(max-width:650px){
+  .container{
+    max-width: 900px;
+    max-height: 550px;
+    gap: 0.5rem;
+  }
+  .row, .col, .col-box, .col-2{
+    gap: 0.5;
+  }
+}
