@@ -54,7 +54,6 @@ body{
   padding: 4rem;
   background-color: rgb(42, 65, 42);
   border-radius: 20px;
-  cursor: pointer;
 }
 
 .modal.open{
