@@ -52,3 +52,7 @@ button{
   color: black;
   background-color: var(--green);
 }
+#counterSub:disabled{
+  opacity: 0;
+  cursor: default;
+}
