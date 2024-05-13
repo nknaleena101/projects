@@ -13,8 +13,13 @@ function updateCounterDisplay(){
   if(total < 0){
     total = 0;
   }
+  if(total===0){
+    counterSub.disabled = true;
+  }
+  if(total===limit){
+    counterAdd.disabled = true;
+  }
 
-  
   counterDisplay.textContent = total;
   document.body.style.setProperty
   ('background-color', `rgb(${(total / limit)* 255}, 64, 0 )`)
@@ -25,15 +30,14 @@ counterAdd.addEventListener('click', () => {
   total += 1;
 
   counterSub.disabled = false;
-
+  
   updateCounterDisplay();
 });
+
 counterSub.addEventListener('click', () => {
   total -= 1;
   
-  if(total===0){
-    counterSub.disabled = true;
-  }
+  counterAdd.disabled = false;
 
   updateCounterDisplay();
 });
