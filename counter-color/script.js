@@ -13,6 +13,7 @@ function updateCounterDisplay(){
   if(total < 0){
     total = 0;
   }
+
   
   counterDisplay.textContent = total;
   document.body.style.setProperty
@@ -22,10 +23,18 @@ function updateCounterDisplay(){
 
 counterAdd.addEventListener('click', () => {
   total += 1;
+
+  counterSub.disabled = false;
+
   updateCounterDisplay();
 });
 counterSub.addEventListener('click', () => {
   total -= 1;
+  
+  if(total===0){
+    counterSub.disabled = true;
+  }
+
   updateCounterDisplay();
 });
 
