@@ -52,7 +52,8 @@ button{
   color: black;
   background-color: var(--green);
 }
-#counterSub:disabled{
+
+#counterAdd:disabled ,#counterSub:disabled{
   opacity: 0;
   cursor: default;
 }
