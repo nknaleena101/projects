@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(45, 41, 75);
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#keyboard{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 935px;
+}
+
+.row{
+  display: flex;
+  gap: 5px;
+}
+
+.key{
+  padding: 2px;
+  border: 2px solid white;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab, .backslash{
+  width: 79px;
+}
+.backspace{
+  width: 108px;
+}
+.capsLock{
+  width: 100px;
+}
+.enter{
+  width: 120px;
+}
