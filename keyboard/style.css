@@ -11,8 +11,21 @@ main{
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
+}
+
+input{
+  width: 95%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
 }
 
 #keyboard{
@@ -28,7 +41,7 @@ main{
 }
 
 .key{
-  padding: 2px;
+  padding: 3px;
   border: 2px solid white;
   color: white;
   width: 50px;
@@ -36,6 +49,13 @@ main{
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.key p{
+  position: relative;
+  top: 3px;
+  left: 3px;
 }
 
 .tab, .backslash{
@@ -49,4 +69,13 @@ main{
 }
 .enter{
   width: 120px;
+}
+.shift{
+  width: 141.5px;
+}
+.ctrl, .alt{
+  width: 79px;
+}
+.space{
+  width: 557px;
 }
