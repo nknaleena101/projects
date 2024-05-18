@@ -1,32 +1,16 @@
-/* .box {
-  width: 200px;
-  height: 100px;
-  background-color: lightblue;
-  text-align: center;
-  line-height: 100px;
-  margin: 20px;
-  border: 1px solid #000;
-  transition: background-color 0.5s;
-}
-
-.blink {
-  background-color: yellow;
-} */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: poppins;
+  font-family: Poppins;
 }
 
-body{
-  background-color: rgb(45, 41, 75);
+body {
+  background-color: rgb(23, 12, 39);
 }
 
-main{
+main {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -36,7 +20,7 @@ main{
   gap: 3rem;
 }
 
-input{
+input {
   width: 95%;
   height: 40px;
   background-color: transparent;
@@ -47,19 +31,19 @@ input{
   text-align: center;
 }
 
-#keyboard{
+#keyboard {
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 935px;
 }
 
-.row{
+.row {
   display: flex;
   gap: 5px;
 }
 
-.key{
+.key {
   padding: 3px;
   border: 1px solid white;
   color: white;
@@ -71,34 +55,34 @@ input{
   position: relative;
 }
 
-.key:hover{
-  background-color: rgba(255, 255, 355, 0.15);
-}
-
-.key p{
+.key p {
   position: relative;
   top: 2px;
   left: 2px;
 }
 
-.tab, .backslash{
+.tab, .backslash {
   width: 79px;
 }
-.backspace{
+.backspace {
   width: 108px;
 }
-.capsLock{
+.capsLock {
   width: 100px;
 }
-.enter{
+.enter {
   width: 120px;
 }
-.shift{
+.shift {
   width: 141.5px;
 }
-.ctrl, .alt{
+.ctrl, .alt {
   width: 79px;
 }
-.space{
+.space {
   width: 557px;
+}
+
+.blink {
+  background-color: rgba(100, 40, 197, 0.45)
 }
