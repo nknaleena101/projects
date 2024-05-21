@@ -18,4 +18,7 @@ const makeHTML = data => {
     <summary>${data.title}</summary>
     <p>${data.detail}</p>
   </details>`
-}
+};
+
+const containerElement = document.getElementById('faq-container');
+containerElement.innerHTML = dataArray.map(dataItem => makeHTML(dataItem)).join("");
