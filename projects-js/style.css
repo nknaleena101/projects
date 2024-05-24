@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* desktop  view*/
+@media only screen and (min-width: 768px) {
+  h1{
+    margin: 3rem 0;
+    font-size: 3rem;
+  }
+  main{
+    width: 840px;
+  }
+  .project_card{
+    height: 222px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .description{
+    width: 360px;
+    height: 183.59px;
+  }
+  .info{
+    height: 100%;
+  justify-content: space-between;
+  }
+  .descriptionText{
+    font-size: 14px;
+  }
+  .project_card img{
+    height: 190px;
+  }
+}
+
+/* mobile view */
+@media only screen and (max-width: 768px){
+  h1{
+    margin: 1.5rem 0;
+    font-size: 2rem;
+  }
+  main{
+    width: 300px;
+  }
+  .project_card{
+    height: 380px;
+    flex-direction: column-reverse;
+  }
+  .description{
+    height: 100%;
+    justify-content: space-between;
+  }
+  .info{
+    height: 70%;
+    justify-content: space-around;
+  }
+  .descriptionText{
+    font-size: 12px;
+  }
+  .project_card img{
+    height: 160px;
+  }
+}
+
+*{
+  font-family: "Roboto Mono";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+.project_card{
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 24px;
+}
+
+.project_card img{
+  width: auto;
+  border-radius: 16px;
+  border: 2px solid black;
+}
+
+.viewBtn{
+  width: 100%;
+  height: 34px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.viewBtn:hover{
+  background-color: black;
+  color: white;
+}
