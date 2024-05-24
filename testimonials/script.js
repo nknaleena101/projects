@@ -1,35 +1,51 @@
 const testimonails= [
   {
     author: {
-      name: 'Gabriel Moore',
-      Image: 'img/author-01.jpg',
+      name: 'Homelander',
+      Image: 'img/homelander.jpg',
     },
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi repellat asperiores nihil tenetur, optio aut aperiam veritatis officia ipsum. Soluta repellendus ipsam quidem accusamus? Dolor quisquam repellat sit perspiciatis.',
-    date: '23rd of May',
+    text: 'The Homelander is one of the main antagonists of the comic book series The Boys and the media franchise of the same name, created by Garth Ennis and Darick Robertson.',
+    date: 'Antony Starr',
   },
   {
     author: {
-      name: 'Toney Fergason',
-      Image: 'img/author-02.jpg',
+      name: 'Billy Butcher',
+      Image: 'img/Billy-Butcher.jpg',
     },
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi repellat asperiores nihil tenetur, optio aut aperiam veritatis officia ipsum. Soluta repellendus ipsam quidem accusamus? Dolor quisquam repellat sit perspiciatis.',
-    date: '25rd of May',
+    text: 'William J. Butcher, or "Billy the Butcher", is an antihero in the comic book and Amazon Prime series The Boys, created by Garth Ennis and Darick Robertson.',
+    date: 'Karl Urban',
   },
   {
     author: {
-      name: 'Jackie Oliver',
-      Image: 'img/author-03.jpg',
+      name: 'Hughie Campbell',
+      Image: 'img/Hughie-Campbell.jpg',
     },
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi repellat asperiores nihil tenetur, optio aut aperiam veritatis officia ipsum. Soluta repellendus ipsam quidem accusamus? Dolor quisquam repellat sit perspiciatis.',
-    date: '2nd of June',
+    text: 'Hugh "Wee Hughie" Campbell is the main protagonist of the comic book series The Boys and its spin-offs Herogasm and Highland Laddie, created by Garth Ennis and Darick Robertson and visually designed after Simon Pegg',
+    date: 'Jack Quaid',
   },
   {
     author: {
-      name: 'Pauline Carter',
-      Image: 'img/author-04.jpg',
+      name: 'Annie January',
+      Image: 'img/Starlight.jpg',
     },
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi repellat asperiores nihil tenetur, optio aut aperiam veritatis officia ipsum. Soluta repellendus ipsam quidem accusamus? Dolor quisquam repellat sit perspiciatis.',
-    date: '9th of June',
+    text: 'Rebecca Anne "Annie" January is a fictional superheroine in the comic book series The Boys, created by Garth Ennis and Darick Robertson. As Starlight, she is a member of the Seven, a group of superheroes funded by Vought-American, and the love interest of Hughie Campbell.',
+    date: 'Erin Moriarty',
+  },
+  {
+    author: {
+      name: "Mother's Milk",
+      Image: 'img/Mothers-Milk.jpg',
+    },
+    text: "Mother's Milk, or simply M.M., is a fictional character and antihero in the comic book series The Boys, Herogasm, and Highland Laddie, created by Garth Ennis and Darick Robertson.",
+    date: 'Laz Alonso',
+  },
+  {
+    author: {
+      name: 'Kimiko Miyashiro',
+      Image: 'img/Kimiko.jpg',
+    },
+    text: "Kimiko Miyashiro, or simply The Female, is one of the three tritagonists (alongside Frenchie and Mother's Milk) of the Amazon series The Boys, serving as a major character in both Seasons 1 and 3, and the tritagonist of Season 2. She is a member of the vigilante group known as The Boys.",
+    date: 'Karen Fukuhara',
   }
 ];
 
@@ -40,7 +56,7 @@ const makeTestimonialCard = testimonail => {
   <img src="${testimonail.author.Image}">
   <h2>${testimonail.author.name}</h2>
   <p>${testimonail.text}</p>
-  <date>Written on ${testimonail.date}</date>
+  <date>name:- ${testimonail.date}</date>
   </div>`
 };
 
