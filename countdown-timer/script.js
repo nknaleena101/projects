@@ -10,3 +10,9 @@ const startTimerButton = document.getElementById("startTimer");
 
 let targetTime;
 let timerInterval;
+
+const updateTimer = () => {
+  if(targetTime){
+    
+  }
+}
