@@ -13,6 +13,6 @@ let timerInterval;
 
 const updateTimer = () => {
   if(targetTime){
-    
+    const differenceInSeconds = Math.floor( targetTime - Date.now() )/1000;     
   }
 }
