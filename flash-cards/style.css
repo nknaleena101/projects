@@ -22,7 +22,9 @@ main{
   position: absolute;
   bottom: 20px;
 }
-
+.back.cursor{
+  cursor: not-allowed;
+}
 button{
   width: 80px;
   background-color: white;
