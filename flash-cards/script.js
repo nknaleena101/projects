@@ -70,23 +70,28 @@ function showAnswer() {
 };
 
 let currentQuestion = 0;
+const questionLimit = flashQuestions.length;
 
 function nextQuestion() {
-  currentQuestion += 1;
+  if(currentQuestion<questionLimit){
+    currentQuestion += 1;
+  }else{
+    currentQuestion==0; 
+  };
   updatePage();
 };
 function previousQuestion() {
-  const backBtn = document.querySelector(".back");
-  if(currentQuestion === 0){
-    backBtn.classList.add('')
+  const backBtn = document.querySelector('back');
+  if(!currentQuestion<=0){
+    currentQuestion -= 1;
   };
-  currentQuestion -= 1;
   updatePage();
 };
 
 const updatePage = () => {
   let markup = makeFlashCard(flashQuestions[currentQuestion]);
   mainElement.innerHTML = markup;
+  console.log(currentQuestion);
 };
 
 updatePage();
