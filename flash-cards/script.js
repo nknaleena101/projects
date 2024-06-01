@@ -69,8 +69,8 @@ function showAnswer() {
   }
 };
 
-let currentQuestion = 0;
 const questionLimit = flashQuestions.length;
+let currentQuestion = 0 && currentQuestion<questionLimit;
 
 function nextQuestion() {
   if(currentQuestion<questionLimit){
