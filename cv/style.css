@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  padding: 10px;
+  width: 850px;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+.section1{
+  flex: 1;
+}
+
+.section2{
+  flex: 2;
+}
+
+.section2-info{
+  display: flex;
+}
+
+.line{
+  margin-top: 60px;
+  height: 780px;
+  background-color: black;
+  width: 5px;
+  animation-name: line;
+  animation-duration: 1s;
+}
+@keyframes line{
+    0%{height: 0px;}
+    5%{height: 39px;}
+    10%{height: 78px;}
+    15%{height: 117px;}
+    20%{height: 156px;}
+    25%{height: 195px;}
+    30%{height: 234px;}
+    35%{height: 273px;}
+    40%{height: 312px;}
+    45%{height: 351px;}
+    50%{height: 390px;}
+    55%{height: 429px;}
+    60%{height: 468px;}
+    65%{height: 507px;}
+    70%{height: 546px;}
+    75%{height: 585px;}
+    80%{height: 624px;}
+    85%{height: 663px;}
+    90%{height: 702px;}
+    95%{height: 741px;}
+    100%{height: 780px;}
+}
+
+.marks{
+  position: relative;
+  width: .5rem;
+  left: -7.5px;
+}
+.mark1, .mark2, .mark3{
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 1.3rem;
+  width: 1.3rem;
+  position: relative;
+}
+.mark1{
+  top: -2px;
+}
+.mark2{
+  top: 10rem;
+}
+.mark3{
+  top: 23rem;
+}
+.cv-right{
+  margin-left: 2rem;
+}
+
+#contact{
+  margin-top: 7rem;
+}
+.card{
+  margin-top: 3rem;
+}
+h1, h2{
+  text-transform: uppercase;
+}
+h1{
+  font-size: 60px;
+  line-height: 40px;
+}
+h1 span{
+  font-size: 40px;
+  display: block;
+}
+h4{
+  font-weight: 600;
+}
+p{
+  font-size: 14px;
+}
+#picture img{
+  width: 200px;
+  border-radius: 50%;
+  /* border: 10px solid black; */
+}
+.work-line1, .edu-item1, .al-item, .ol-item{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.edu-item2{
+  margin-top: 1rem;
+}
+.results{
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+#education .edu-item2 p{
+  margin-left: 1rem;
+}
+
+.contact-item{
+  display: flex;
+  gap: 10px;
+}
+
+.skill-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.bar{
+  position: relative;
+  width: 140px;
+  height: 10px;
+  background-color: #91a3b0;
+  border-radius: 20px;
+  z-index: 1;
+}
+.bar:after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  border-radius: 20px;
+  height: 10px;
+  z-index: 2;
+  animation-duration: 1s;
+}
+.progressbar1::after{
+  animation-name: progressbar1;
+  width: 70%;
+}
+.progressbar2::after{
+  animation-name: progressbar2;
+  width: 70%;
+}
+.progressbar3::after{
+  animation-name: progressbar3;
+  width: 40%;
+}
+.progressbar4::after{
+  animation-name: progressbar4;
+  width: 80%;
+}
+.progressbar5::after{
+  animation-name: progressbar5;
+  width: 80%;
+}
+@keyframes progressbar1{
+  0%{width: 0%;}
+  100%{width: 70%;}
+}
+@keyframes progressbar2{
+  0%{width: 0%;}
+  100%{width: 70%;}
+}
+@keyframes progressbar3{
+  0%{width: 0%;}
+  100%{width: 40%;}
+}
+@keyframes progressbar4{
+  0%{width: 0%;}
+  100%{width: 80%;}
+}
+@keyframes progressbar5{
+  0%{width: 0%;}
+  100%{width: 80%;}
+}
+
+
+
