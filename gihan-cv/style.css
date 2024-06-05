@@ -1,0 +1,248 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Public Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+body{
+    background-color: black;
+}
+
+.main-section{
+    width: 210mm;
+    height: 297mm;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+}
+
+.main-section .left-part{
+    width: 40%;
+    height: 100%;
+    background-color: #151414;
+    padding: 2.8rem;
+}
+
+.left-part .photo-container{
+    margin-bottom: 2.2rem;
+}
+
+.left-part .photo-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 0.2rem solid rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-size: cover;
+}
+
+.title{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 0.6rem;
+    background-color: #7749f3;
+    color: white;
+    text-align: center;
+    margin: 1.4rem 0;
+}
+
+.contact-container{
+    margin-bottom: 2.2rem;
+}
+
+.contact-container .contact-list{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.education-container{
+    margin-bottom: 2.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.education-container .course{
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+ 
+.education-container .education-title{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: .3rem;
+}
+
+.education-container .college-name{
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    
+}
+
+.education-container .education-date{
+    font-size: 0.9rem;
+}
+
+.skills-container .skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.skills-container .skill .right-skill .outer-layer{
+    background-color: #BBBBBB;
+    height:0.4rem;
+    width: 5rem;
+    border-radius: 0.4rem;
+}
+
+.skills-container .skill .right-skill .inner-layer{
+    background-color: #736285;
+    height: 100%;
+    border-radius: inherit;
+}
+
+div .skills-container p{
+    color: white;
+}
+
+.right-part{
+    padding: 2.8rem;
+}
+
+.right-part .banner{
+    font-family: 'Open Sans', sans-serif; 
+    color: #ffffff;
+    margin-bottom: 2.2rem;
+}
+
+.right-part .banner .firstname{
+    font-size: 4rem;
+}
+
+.right-part .banner .lastname{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-top: -1rem;
+}
+
+.right-part .banner .position{
+    letter-spacing: 0.3rem;
+    margin-top: -0.5rem;
+    font-size: 1.1rem;
+}
+
+.work-container{
+    margin-top: 5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.work-container .work:not(:last-child){
+    margin-bottom: 1.8rem;
+}
+
+.work-container .work .job-date{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.work-container .work .company-name{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+
+}
+
+.work-container .work .work-text{
+    color: #ffffff;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1rem;
+}
+
+.references-container .references{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+.references-container .references .name{
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.references-container .references .company-name{
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.references-container .references .phone{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #ffffff;
+}
+.references-container .references .phone p{
+    margin: 0.4rem 0;
+}
+
+.references-container .references .phone .phone-text{
+    font-weight: 600;
+}
+
+.text-left{
+    text-align: left;
+}
+
+/*  */
+.education-section h3, h4, h5, p{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.study-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.study-section h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.al-results, .ol-results{
+    margin-left: 15px;
+    padding-top: 5px;
+}
+.ol-results{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
