@@ -11,12 +11,16 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 40px;
   padding: 0 5%;
+  position: absolute;
+  width: 100%;
+  color: white;
+  z-index: 100;
 }
 
 header h1{
-  font-size: 40px;
+  font-size: 30px;
 }
 
 header nav{
@@ -28,15 +32,56 @@ header nav a{
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
-  padding: 8px 16px;
+  padding: 1px 16px;
   border-radius: 99px;
+  transition: color 0.4s;
+  color: white;
 }
 
 header nav a.active{
   background-color: #524789;
   color: white;
 }
+header nav a.active:hover{
+  color: rgb(130, 223, 230);
+}
 
 header nav a:hover{
   color: #524789;
+}
+
+.home{
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to top, #D2E2FB 30%, #86A8DB);
+  position: relative;
+  overflow: hidden;
+}
+.home img{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.home .title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+  text-shadow: 0px 0px 4px; rgba(0,0,0,0.25);
+}
+
+.about{
+  padding: 50px;
+  background: #3B3291;
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+
+.about h1{
+  font-size: 40px;
 }
