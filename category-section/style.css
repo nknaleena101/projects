@@ -23,7 +23,6 @@ main .mainh1{
   height: 100%;
   display: grid;
   grid-template-columns: repeat(5, 280px);
-  grid-auto-rows: 480px;
   justify-content: center;
   align-content: center;
   margin-bottom: 60px;
@@ -33,7 +32,6 @@ main .mainh1{
 .categoryCard{
   position: relative;
 }
-
 
 .categoryCard img{
   width: 100%;
@@ -127,9 +125,8 @@ main .mainh1{
   
 }
 
-/* Mobilie view */
+/* Mobilie view 1*/
 @media (min-width: 643px) and (max-width: 800px) {
-  /* max-width: 767px */
   .section1{
     display: grid;
     grid-template-columns: repeat(2, 280px);
@@ -142,15 +139,23 @@ main .mainh1{
   
 }
 
+/* Mobilie view 1*/
 @media (max-width: 642px) {
   .section1{
-    grid-template-columns: 240px;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: 274px;
+  }
+  .categoryCard, .categoryCard img, .categoryCard::before{
+    height: 274px;
   }
   .categoryCard .text h1{
-    font-size: 24px;
+    font-size: 17px;
   }
   .categoryCard .text h1::after{
     opacity: 0;
+  }
+  main .mainh1{
+    font-size: 45px;
   }
 }
 
